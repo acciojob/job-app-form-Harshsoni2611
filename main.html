@@ -2,99 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 20px;
-        }
-        form {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            margin: auto;
-        }
-        label {
-            display: block;
-            margin-top: 15px;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="number"],
-        input[type="date"],
-        input[type="password"],
-        input[type="url"],
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-        input[type="radio"] {
-            margin-right: 10px;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 <body>
 
-    <h1 style="text-align:center;">Job Application Form</h1>
+    <h1>Job Application Form</h1>
 
-    <form method="POST" action="#">
-        <label for="name">Name *</label>
-        <input type="text Input" id="name" name="name" required>
+    <form action="#" method="POST">
 
-        <label for="email">Email *</label>
-        <input type="email" id="email" name="email" required>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+		<br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+		<br>
+        <div>
+            <p>Gender:</p>
+            <label for="gender_male">Male</label>
+            <input type="radio" id="gender_male" name="gender" value="male" required>
 
-        <label>Gender *</label>
-        <input type="radio" id="male" name="gender" value="male" required>
-        <label for="male">Male</label>
-        
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
+            <label for="gender_female">Female</label>
+            <input type="radio" id="gender_female" name="gender" value="female" required>
 
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label>
+            <label for="gender_other">Other</label>
+            <input type="radio" id="gender_other" name="gender" value="other" required>
+        </div>
 
-        <label for="laptop">Laptop Brands</label>
-        <select id="laptop" name="laptop">
-            <option value="">Select a brand</option>
-            <option value="apple">Apple</option>
-            <option value="asus">Asus</option>
-            <option value="hp">HP</option>
-        </select>
-
-        <label for="age">Age *</label>
-        <input type="number input" id="age" name="age" required>
-
-        <label for="dob">Date of Birth *</label>
-        <input type="date input" id="dob" name="dob" required>
-
-        <label for="password">Password *</label>
-        <input type="password input" id="password" name="password" required>
-
-        <label for="portfolio">Portfolio URL</label>
-        <input type="url input" id="portfolio" name="portfolio">
-
+        <div>
+            <label for="laptop">Laptop Brands:</label>
+            <select id="laptop" name="laptop">
+                <option value="apple">Apple</option>
+                <option value="asus">Asus</option>
+                <option value="hp">HP</option>
+            </select>
+        </div>
+		<br>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+		<br>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+		<br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+		<br>
+        <div>
+            <label for="portfolio">Portfolio URL:</label>
+            <input type="url" id="portfolio" name="portfolio">
+        </div>
+		<br>
         <button type="submit">Submit</button>
+
     </form>
 
 </body>
